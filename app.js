@@ -5,7 +5,7 @@ let amigos= [];
 
 function agregarAmigo(){
     let inputAmigo= document.querySelector("#amigo");
-    let amigo = inputAmigo.value;
+    let amigo = inputAmigo.value.trim();
     let regex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
     
     if(amigo===""){
@@ -13,7 +13,7 @@ function agregarAmigo(){
         return
     }
     if (!regex.test(amigo)) {
-        alert("No se permite numeros y/o simbolos. Por favor escriba un nombre como la gente!");
+        alert("No se permite numeros y/o simbolos. Por favor escriba un nombre como la gente!");//tal vez suene algo rudo pero es mas gracioso que rudo... quizas mas adelante lo modifique :)
         inputAmigo.value="";
         return;
     }
