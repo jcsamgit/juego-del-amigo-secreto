@@ -7,5 +7,7 @@ Solo hay 3 funciones basicas, la funcion "agregar amigo" que ademas de añadir a
 
 <img width="1102" height="793" alt="image" src="https://github.com/user-attachments/assets/a2b5244b-10e8-4bab-8835-8252aa5f61d3" />
 
+<br>
+Asi se muestra cuando se agregan algunos amigos y se hace el sorteo:
 <img width="1104" height="848" alt="image" src="https://github.com/user-attachments/assets/b3c981b7-fc2b-46cb-914d-646dce50162b" />
 
