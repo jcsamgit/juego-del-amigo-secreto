@@ -14,9 +14,24 @@ function agregarAmigo(){
     }
     if (!regex.test(amigo)) {
         alert("No se permite numeros y/o simbolos. Por favor escriba un nombre como la gente!");
+        inputAmigo.value="";
         return;
     }
     amigos.push(amigo);
     inputAmigo.value="";
     console.log(amigos);
+
+    mostrarAmigos()
 }
+
+    function mostrarAmigos() {
+    let lista = document.querySelector("#listaAmigos");
+    lista.innerHTML = ""; 
+
+    for (let i = 0; i < amigos.length; i++) {
+        let li = document.createElement("li");
+        li.textContent = amigos[i];
+        lista.appendChild(li);
+    }
+}
+
