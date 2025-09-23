@@ -13,7 +13,7 @@ function agregarAmigo(){
         return
     }
     if (!regex.test(amigo)) {
-        alert("No se permite numeros y/o simbolos. Por favor escriba un nombre como la gente!");//tal vez suene algo rudo pero es mas gracioso que rudo... quizas mas adelante lo modifique :)
+        alert("No se permite numeros y/o simbolos. Por favor escriba un nombre!");
         inputAmigo.value="";
         return;
     }
