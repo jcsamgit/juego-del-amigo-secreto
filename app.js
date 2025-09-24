@@ -17,6 +17,18 @@ function agregarAmigo(){
         inputAmigo.value="";
         return;
     }
+
+    let amigoNormalizado = amigo.toLowerCase();
+
+    let existe = amigos.some(nombre => nombre.toLowerCase() === amigoNormalizado);
+
+    if (existe) {
+        alert("Este nombre ya fue ingresado");
+        inputAmigo.value = "";
+        return;
+    }
+
+    
     amigos.push(amigo);
     inputAmigo.value="";
     console.log(amigos);
